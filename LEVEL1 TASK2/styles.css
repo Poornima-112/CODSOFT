@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+p, li {
+    margin-bottom: 0.75rem;
+}
+
+/* Header */
+header {
+    background-color:  #c2910c; /* Dark background */
+    color: #ECF0F1; /* Light text */
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header a {
+    color: #073a50; /* Different link color in header */
+}
+
+/* Sections */
+.section {
+    padding: 2rem 0;
+}
+
+.bg-light {
+    background-color: #F7F7F7; /* Light background */
+    color: #333; /* Dark text */
+}
+
+.bg-dark {
+    background-color: #724dad; /* Dark background */
+    color: #ECF0F1; /* Light text */
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Credly Badges Section */
+.credly-badge-row {
+    display: flex;
+    justify-content: space-around; /* Adjusts the spacing between the badges */
+    flex-wrap: wrap; /* Allows badges to wrap if the screen is too narrow */
+    margin-top: 1.5rem;
+}
+
+.credly-badge-container {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.credly-badge-container iframe {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+
+/* Footer */
+footer {
+    background-color: #c2910c; /* Dark footer */
+    color: #ECF0F1;
+    text-align: center;
+    padding: 1rem 0;
+}

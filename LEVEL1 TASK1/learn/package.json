@@ -1,0 +1,19 @@
+{
+  "name": "cwh",
+  "version": "1.0.0",
+  "description": "created while studying",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "poornima",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "@forbeslindesay/tsconfig": "^2.1.1"
+  }
+}

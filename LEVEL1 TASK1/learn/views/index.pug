@@ -1,0 +1,118 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title FitLife Gym
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200")
+    link(rel="stylesheet" href="/static/style.css")
+
+  body
+    header
+      .container
+        img(src="/static/logo.png", alt="FitLife Gym Logo", class="logo")
+        h1 FitLife Gym
+        nav
+          ul
+            li: a(href="#home") Home
+            li: a(href="#about") About
+            li: a(href="#services") Services
+            li: a(href="#contact") Contact
+
+    section#home.hero
+      .hero-content
+        h2 Welcome to FitLife Gym
+        p Your journey to a healthier life starts here.
+        a.cta-button(href="#contact") Join Now
+
+    section#about
+      .container
+        h2 About Us
+        p 
+          span.material-symbols-outlined.icon-heart_plus
+            | heart_plus
+          | At FitLife Gym, we provide state-of-the-art equipment and a motivating environment to help you achieve your fitness goals. 
+          | Our team of certified trainers is dedicated to supporting you every step of the way, offering personalized workout plans and nutritional guidance.
+        br
+        p
+          span.material-symbols-outlined.icon-diversity_2
+            | diversity_2
+          | Whether you're a beginner or a seasoned athlete, our diverse range of classes and programs are designed to fit your needs and help you reach your potential. 
+          | Join our community and experience the difference that a supportive and dynamic gym environment can make in your fitness journey.
+        br
+        p
+          span.material-symbols-outlined.icon-power
+            | power
+          | We believe in the power of fitness to transform lives and are committed to creating a space where you can thrive both physically and mentally. 
+          | Discover your strength, build confidence, and achieve your goals with us at FitLife Gym.
+    section#services
+      .container
+        h2 Our Services
+        .service
+          h3
+            span.material-symbols-outlined.icon-diversity_1 diversity_1
+            | Personal Training
+          p Get personalized workout plans and one-on-one coaching.
+        .service
+          h3
+            span.material-symbols-outlined.icon-partner_exchange partner_exchange
+            | Group Classes
+          p Join our group classes for a fun and engaging workout experience.
+        .service
+          h3
+            span.material-symbols-outlined.icon-nutrition nutrition
+            | Nutritional Advice
+          p Receive expert advice on diet and nutrition to complement your workouts.
+
+    section#featured-programs
+      .container
+        h2 Featured Programs
+        .card
+          img(src="/static/c1.jpg" alt="Program 1")
+          .card-content
+            h3 Beginner
+            p Discover our beginner-friendly program designed to get you started on your fitness journey.
+        .card
+          img(src="/static/c2.jpg" alt="Program 2")
+          .card-content
+            h3 Level Up
+            p Take your fitness to the next level with our intermediate program that challenges and motivates.
+        .card
+          img(src="/static/c3.jpg" alt="Program 3")
+          .card-content
+            h3 Pro
+            p Achieve peak performance with our advanced program tailored for experienced athletes.
+
+    section#contact
+        .container
+            h2 Contact Us
+            p
+              span.material-symbols-outlined.icon-contact_support contact_support 
+              | Email us at 
+              a(href="mailto:info@fitlifegym.com") info@fitlifegym.com
+              |  or call us at 
+              a(href="tel:+1234567890") (123) 456-7890
+
+    section#map
+      .container
+        h2 Find Us Here
+        iframe(src="https://www.google.com/maps/d/embed?mid=1bIvaSgeWlj2YOTUgjvDioEzAbFo&ehbc=2E312F" width="640" height="480")
+
+    section#form
+      .container
+        h2 Sign Up
+        form(action="/submit-form" method="post")
+          .form-group
+            label(for="name") Name:
+            input(type="text" id="name" name="name" required)
+          .form-group
+            label(for="age") Age:
+            input(type="number" id="age" name="age" required)
+          .form-group
+            label(for="profession") Profession:
+            input(type="text" id="profession" name="profession" required)
+          button.cta-button(type="submit") Submit
+
+    footer
+      .container
+        p &copy; 2024 FitLife Gym. All rights reserved.
