@@ -22,14 +22,14 @@ p, li {
 
 /* Header */
 header {
-    background-color:  #c2910c; /* Dark background */
+    background-color:  #e4ad18; /* Dark background */
     color: #ECF0F1; /* Light text */
     padding: 2rem 0;
     text-align: center;
 }
 
 header a {
-    color: #073a50; /* Different link color in header */
+    color: #8b0abe; /* Different link color in header */
 }
 
 /* Sections */
